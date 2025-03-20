@@ -44,4 +44,19 @@ VALUES ('Cosmic Drifters', 'Stellar Memories', '2018-03-12',
         'https://example.com/electric_dreams_digital');
 
 
-select * from songs;
+insert into songs_external (group_name, song_name, release_date, text, link)
+values ('AAAAAAAAAAAAAAAAAAAAA',
+        'BBBBBBBBBBBBBBBBBBBBBBB',
+        '2017-09-08',
+'Footprints vanish in the shifting sands
+
+Ancient wisdom passed through weathered hands
+
+Mirages shimmer in the distance wide
+
+Promising oasis where none reside',
+        'https://example.com/desert_nomads_sandstone');
+
+
+select *
+from songs_external;
